@@ -2,50 +2,61 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+h1{
+ padding: 10px 5px 10px 10px;
+ }
+
+h1:hover {
+  color: #025167;
+}
+
 .products {
+
+  a:hover {
+    color:#025167; 
+    background-color: none;
+  }
   table {
+    margin: 0 0 0 10px;
+    width: 80%;
     border-collapse: collapse;
   }
 
-  table tr td {
-    padding: 5px;
-    vertical-align: top;
-  }
-
   .list_image {
+    margin: 4px 4px 4px 4px;
     width:  60px;
     height: 70px;
   }
 
+  .list_image:hover {
+   box-shadow: 2px 2px 5px black;
+  }
+
   .list_description {
-    width: 60%;
-
-    dl {
-      margin: 0;
-    }
-
+    width: 70%;
+    
     dt {
       color:        #244;
       font-weight:  bold;
       font-size:    larger;
     }
 
-    dd {
-      margin: 0;
+     dt:hover {
+      color: #A61700;
     }
   }
 
   .list_actions {
     font-size:    x-small;
-    text-align:   right;
-    padding-left: 1em;
+    text-align:   left;
+ 
   }
 
   .list_line_even {
-    background:   #e0f8f8;
+    background:   #E4E6E6;
   }
 
   .list_line_odd {
-    background:   #f8b0f8;
+    background:   #C0C0C0;
   }
 }
